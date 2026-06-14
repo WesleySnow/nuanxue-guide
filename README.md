@@ -1,5 +1,6 @@
 # 暖雪 · 流派秘籍全集
-
+**🔗 在线使用**：[https://wesleysnow.github.io/arena-god-tracker/
+](https://wesleysnow.github.io/nuanxue-guide/)
 一份《暖雪》单页攻略,国风冰雪主题,手机 / 电脑均可离线查阅。涵盖:
 
 - **开荒路线** — 难度阶梯 + 七剑无影过第一章四步
@@ -9,25 +10,6 @@
 - **核心机制词典** — 走火入魔、玄武、憎恨之心、母神旧印、踏风草减CD、真伤/百分比、堕龙、精炼
 - **实用技巧 · SL**、**见闻录避坑 & 封印**、**皮肤收集**、**NPC 解锁地点**
 
-纯静态单文件,无后端、无追踪,所有插画为原创 SVG(未使用任何游戏截图或角色立绘)。
-
-## 部署到 GitHub Pages
-
-1. 新建一个仓库(例如 `warmsnow-guide`),设为 Public。
-2. 把本目录的 `index.html` 上传到仓库根目录(网页端可直接拖拽 / Add file → Upload files,或用 git push)。
-3. 进入仓库 **Settings → Pages**。
-4. **Source** 选 `Deploy from a branch`,**Branch** 选 `main`、目录 `/ (root)`,保存。
-5. 等一两分钟,访问 `(https://wesleysnow.github.io/nuanxue-guide/)` 即可。
-
-
-## 本地预览
-
-直接双击 `index.html` 用浏览器打开即可;或在目录下运行:
-
-```bash
-python3 -m http.server 8080
-# 然后打开 http://localhost:8080
-```
 
 ## 说明
 
