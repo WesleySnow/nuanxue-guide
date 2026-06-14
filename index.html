@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>暖雪 · 流派秘籍全集 — 配装 / 速刷红魂 / 天赋攻略</title>
+<meta name="description" content="《暖雪》单页攻略:10 职业 22 套配装、红魂速刷、天赋加点、核心机制、SL 技巧、见闻录避坑与皮肤收集。国风冰雪主题,手机/电脑可离线查阅。">
+<meta name="theme-color" content="#0a0e16">
+<meta name="color-scheme" content="dark">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="暖雪秘籍">
+<meta property="og:type" content="website">
+<meta property="og:title" content="暖雪 · 流派秘籍全集">
+<meta property="og:description" content="10 职业 22 套配装 + 红魂速刷 + 天赋 + 机制 + 收集,一页查完。">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%230a0e16'/><circle cx='32' cy='26' r='9' fill='%23d8453a'/><path d='M12 50 26 30 32 38 38 28 52 50Z' fill='%23eaf0f7'/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500;700;900&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{--ink:#0a0e16;--ink-2:#111723;--ink-3:#161d2b;--ink-4:#1b2434;--snow:#eaf0f7;--snow-dim:#9aa7b8;--snow-faint:#5e6b7e;--vermilion:#d8453a;--vermilion-soft:#e7766c;--frost:#5fb6cf;--amber:#d6a23a;--violet:#9886d6;--line:rgba(234,240,247,.09);--line-strong:rgba(234,240,247,.16);--s1:#d8453a;--s2:#d6a23a;--s3:#5fb6cf;--s4:#9886d6}
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+  body{background:var(--ink);color:var(--snow);font-family:"Noto Sans SC","PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,sans-serif;line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  #snow{position:fixed;inset:0;z-index:0;pointer-events:none;opacity:.5}
+  .wrap{position:relative;z-index:1;max-width:1180px;margin:0 auto;padding:0 20px}
+  a{color:inherit;text-decoration:none}
+  header.hero{position:relative;padding:74px 20px 38px;text-align:center;background:radial-gradient(120% 80% at 50% -10%, rgba(216,69,58,.10), transparent 60%),linear-gradient(180deg,#0c1118 0%, var(--ink) 100%);border-bottom:1px solid var(--line)}
+  .hero .eyebrow{font-size:12px;letter-spacing:.5em;color:var(--vermilion-soft);font-weight:500;text-indent:.5em;margin-bottom:18px}
+  .hero h1{font-family:"Noto Serif SC","Songti SC","STSong","SimSun",serif;font-weight:900;font-size:clamp(56px,13vw,108px);line-height:.95;letter-spacing:.06em;background:linear-gradient(180deg,#fff,#c4cedb 70%,#93a0b2);-webkit-background-clip:text;background-clip:text;color:transparent;text-shadow:0 2px 40px rgba(120,160,210,.12)}
+  .hero .sub{font-family:"Noto Serif SC","Songti SC","STSong","SimSun",serif;font-weight:700;font-size:clamp(17px,4.4vw,24px);letter-spacing:.42em;color:var(--snow-dim);margin-top:14px;text-indent:.42em}
+  .hero .meta{margin-top:20px;font-size:13.5px;color:var(--snow-faint);letter-spacing:.1em}
+  .hero .meta b{color:var(--vermilion-soft);font-weight:700}
+  .pick{max-width:1180px;margin:26px auto 0;display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+  @media(max-width:720px){.pick{grid-template-columns:1fr 1fr}}
+  .pick .p{border:1px solid var(--line);border-radius:13px;padding:14px 15px;background:rgba(17,23,35,.6);backdrop-filter:blur(6px)}
+  .pick .p .lab{font-size:11px;letter-spacing:.14em;color:var(--snow-faint);font-weight:700;margin-bottom:5px}
+  .pick .p .val{font-family:"Noto Serif SC","Songti SC","STSong","SimSun",serif;font-weight:700;font-size:16px;color:var(--snow)}
+  .pick .p .val small{display:block;font-family:"Noto Sans SC","PingFang SC","Microsoft YaHei",sans-serif;font-weight:400;font-size:12px;color:var(--snow-dim);margin-top:3px;letter-spacing:0}
+  nav.bar{position:sticky;top:0;z-index:30;margin-top:26px;background:rgba(10,14,22,.86);backdrop-filter:blur(12px);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .bar-inner{max-width:1180px;margin:0 auto;padding:10px 16px;display:flex;gap:7px;overflow-x:auto;scrollbar-width:none}
+  .bar-inner::-webkit-scrollbar{display:none}
+  .nlink{flex:0 0 auto;font-size:13px;font-weight:500;color:var(--snow-dim);padding:6px 13px;border:1px solid transparent;border-radius:999px;white-space:nowrap;transition:.18s;background:transparent}
+  .nlink:hover{color:var(--snow);background:rgba(234,240,247,.05)}
+  .nlink.on{color:var(--snow);border-color:var(--vermilion);background:rgba(216,69,58,.1)}
+  .nlink:focus-visible{outline:2px solid var(--frost);outline-offset:2px}
+  section.sec{padding:48px 0 8px;scroll-margin-top:64px}
+  .sec-head{display:flex;align-items:center;gap:14px;margin-bottom:8px}
+  .sec-no{font-family:"Noto Serif SC","Songti SC","STSong","SimSun",serif;font-weight:900;font-size:15px;color:#0a0e16;background:var(--vermilion);width:30px;height:30px;border-radius:8px;display:grid;place-items:center;transform:rotate(-3deg);box-shadow:0 4px 12px rgba(216,69,58,.3)}
+  h2.sec-title{font-family:"Noto Serif SC","Songti SC","STSong","SimSun",serif;font-weight:900;font-size:clamp(24px,5.6vw,34px);letter-spacing:.04em}
+  .sec-rule{flex:1;height:1px;background:linear-gradient(90deg,var(--line-strong),transparent)}
+  .sec-lead{color:var(--snow-dim);font-size:14.5px;margin:6px 0 22px;max-width:760px}
+  .sec-lead b{color:var(--snow);font-weight:500}
+  .steps{display:flex;flex-direction:column;gap:12px}
+  .step{display:flex;gap:15px;background:linear-gradient(180deg,var(--ink-2),#0e141e);border:1px solid var(--line);border-radius:14px;padding:16px 18px}
+  .step .sn{flex:0 0 auto;width:30px;height:30px;border-radius:9px;background:var(--ink-4);color:var(--frost);font-family:"Noto Serif SC","Songti SC","STSong","SimSun",serif;font-weight:900;display:grid;place-items:center;font-size:15px;border:1px solid var(--line-strong)}
+  .step .sc h4{font-family:"Noto Serif SC","Songti SC","STSong","SimSun",serif;font-weight:700;font-size:16.5px;margin-bottom:3px}
+  .step .sc p{font-size:13.5px;color:var(--snow-dim)}
+  .step .sc p b{color:var(--snow);font-weight:500}
+  .step .sc .hl{color:var(--vermilion-soft);font-weight:700}
+  .call{margin:16px 0 0;border-radius:0 11px 11px 0;padding:13px 16px;font-size:13.5px;color:var(--snow-dim)}
+  .call b{font-weight:700}
+  .call.warn{background:rgba(216,69,58,.07);border-left:3px solid var(--vermilion)}
+  .call.warn b{color:var(--vermilion-soft)}
+  .call.tip{background:rgba(95,182,207,.07);border-left:3px solid var(--frost)}
+  .call.tip b{color:var(--frost)}
+  .ladder{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px}
+  .rung{flex:1 1 auto;min-width:88px;text-align:center;border:1px solid var(--line);border-radius:11px;padding:11px 8px;background:var(--ink-2)}
+  .rung .d{font-family:"Noto Serif SC","Songti SC","STSong","SimSun",serif;font-weight:700;font-size:16px}
+  .rung .t{font-size:11px;color:var(--snow-faint);margin-top:3px}
+  .rung.now{border-color:var(--vermilion);background:rgba(216,69,58,.1)}
+  .rung.now .t{color:var(--vermilion-soft)}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  @media(max-width:780px){.grid2{grid-template-columns:1fr}}
+  .mech{background:linear-gradient(180deg,var(--ink-2),#0e141e);border:1px solid var(--line);border-radius:14px;padding:15px 17px;transition:.2s}
+  .mech:hover{border-color:var(--line-strong);transform:translateY(-2px)}
+  .mech .mt{display:flex;align-items:baseline;gap:9px;margin-bottom:7px;flex-wrap:wrap}
+  .mech .mt h4{font-family:"Noto Serif SC","Songti SC","STSong","SimSun",serif;font-weight:700;font-size:17px}
+  .mech .badge{font-size:10px;font-weight:700;letter-spacing:.08em;padding:2px 7px;border-radius:5px}
+  .badge.atk{background:rgba(216,69,58,.14);color:var(--vermilion-soft)}
+  .badge.def{background:rgba(95,182,207,.14);color:var(--frost)}
+  .badge.util{background:rgba(214,162,58,.14);color:var(--amber)}
+  .badge.boss{background:rgba(152,134,214,.16);color:var(--violet)}
+  .mech p{font-size:13px;color:var(--snow-dim)}
+  .mech p b{color:var(--snow);font-weight:500}
+  .mech .mtip{margin-top:8px;font-size:12.5px;color:var(--frost);border-top:1px dashed var(--line);padding-top:7px}
+  .mech .mtip::before{content:"\25b8  ";opacity:.7}
+  .list{display:flex;flex-direction:column;gap:10px}
+  .li{display:flex;gap:13px;align-items:flex-start;background:var(--ink-2);border:1px solid var(--line);border-radius:12px;padding:13px 15px}
+  .li .ico{flex:0 0 auto;width:34px;height:34px;border-radius:9px;display:grid;place-items:center;font-family:"Noto Serif SC","Songti SC","STSong","SimSun",serif;font-weight:900;font-size:16px;color:#fff;background:linear-gradient(160deg,#3a4456,#222a38)}
+  .li.gold .ico{background:linear-gradient(160deg,#d6a23a,#9a6f1d);color:#1a1206}
+  .li.red .ico{background:linear-gradient(160deg,#d8453a,#a8281f);color:#fff5f2}
+  .li.frost .ico{background:linear-gradient(160deg,#5fb6cf,#2d6b80);color:#04131a}
+  .li .lc h4{font-family:"Noto Serif SC","Songti SC","STSong","SimSun",serif;font-weight:700;font-size:15.5px;margin-bottom:2px}
+  .li .lc p{font-size:13px;color:var(--snow-dim)}
+  .li .lc p b{color:var(--snow);font-weight:500}
+  .li .where{font-size:11.5px;color:var(--amber);margin-top:4px}
+  .li .where::before{content:"\2316  ";opacity:.8}
+  .subnav{display:flex;gap:7px;overflow-x:auto;scrollbar-width:none;padding:4px 0 14px;margin-top:4px;position:sticky;top:53px;z-index:10;background:linear-gradient(180deg,var(--ink) 70%,transparent)}
+  .subnav::-webkit-scrollbar{display:none}
+  .chip{flex:0 0 auto;font-size:12.5px;font-weight:500;color:var(--snow-dim);padding:5px 12px;border:1px solid var(--line-strong);border-radius:999px;background:var(--ink);white-space:nowrap;transition:.18s}
+  .chip:hover{color:var(--snow);border-color:var(--vermilion);background:rgba(216,69,58,.08)}
+  .chip:focus-visible{outline:2px solid var(--frost);outline-offset:2px}
+  .blegend{display:flex;flex-wrap:wrap;gap:9px 18px;align-items:center;margin-bottom:18px;font-size:12.5px;color:var(--snow-dim)}
+  .pos{display:inline-flex;align-items:center;gap:6px;font-weight:700}
+  .dot{width:16px;height:16px;border-radius:5px;display:grid;place-items:center;font-size:11px;color:#0a0e16;font-weight:700}
+  .dot.p1{background:var(--s1)}.dot.p2{background:var(--s2)}.dot.p3{background:var(--s3)}.dot.p4{background:var(--s4)}
+  .blegend .sym{color:var(--snow-faint)}.blegend .sym b{color:var(--snow);font-weight:500}
+  .char{margin-top:26px;scroll-margin-top:104px}
+  .char-head{display:flex;align-items:center;gap:15px;margin-bottom:14px}
+  .seal{flex:0 0 auto;width:48px;height:48px;border-radius:11px;background:linear-gradient(160deg,#d8453a,#a8281f);display:grid;place-items:center;font-family:"Noto Serif SC","Songti SC","STSong","SimSun",serif;font-weight:900;font-size:25px;color:#fff5f2;box-shadow:0 6px 18px rgba(216,69,58,.28),inset 0 0 0 1.5px rgba(255,255,255,.18);transform:rotate(-3deg);text-shadow:0 1px 3px rgba(0,0,0,.35)}
+  .char-name{font-family:"Noto Serif SC","Songti SC","STSong","SimSun",serif;font-weight:900;font-size:clamp(22px,5vw,30px);letter-spacing:.04em}
+  .char-rule{flex:1;height:1px;background:linear-gradient(90deg,var(--line-strong),transparent)}
+  .builds{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  @media(max-width:780px){.builds{grid-template-columns:1fr}}
+  .card{background:linear-gradient(180deg,var(--ink-2),#0e141e);border:1px solid var(--line);border-radius:16px;padding:17px 17px 15px;transition:transform .2s,border-color .2s,box-shadow .2s}
+  .card:hover{transform:translateY(-3px);border-color:var(--line-strong);box-shadow:0 12px 30px rgba(0,0,0,.35)}
+  .card-top{display:flex;align-items:baseline;gap:9px;flex-wrap:wrap;margin-bottom:13px}
+  .branch{font-size:11px;font-weight:700;letter-spacing:.16em;color:var(--ink);background:var(--snow-dim);padding:3px 8px;border-radius:6px}
+  .card.j2 .branch{background:var(--frost)}
+  .flow{font-family:"Noto Serif SC","Songti SC","STSong","SimSun",serif;font-weight:700;font-size:18px}
+  .tag{font-size:10.5px;font-weight:700;letter-spacing:.06em;padding:3px 8px;border-radius:6px;border:1px solid var(--vermilion);color:var(--vermilion-soft);background:rgba(216,69,58,.08)}
+  .relics{display:grid;grid-template-columns:1fr 1fr;gap:7px;margin-bottom:13px}
+  .relic{display:flex;gap:8px;align-items:flex-start;background:var(--ink-3);border-radius:9px;padding:7px 9px;border:1px solid transparent}
+  .rnum{flex:0 0 auto;width:19px;height:19px;border-radius:5px;display:grid;place-items:center;font-size:11px;font-weight:700;color:#0a0e16;margin-top:1px}
+  .relic.r1 .rnum{background:var(--s1)}.relic.r2 .rnum{background:var(--s2)}.relic.r3 .rnum{background:var(--s3)}.relic.r4 .rnum{background:var(--s4)}
+  .relic.r1{border-color:rgba(216,69,58,.22)}.relic.r2{border-color:rgba(214,162,58,.2)}.relic.r3{border-color:rgba(95,182,207,.2)}.relic.r4{border-color:rgba(152,134,214,.2)}
+  .ritems{font-size:13px;line-height:1.42}.ritems .main{color:var(--snow);font-weight:500}
+  .ritems .alt{color:var(--snow-faint);font-size:12px}.ritems .must{color:var(--vermilion-soft);font-size:11px;font-weight:700;margin-left:2px}
+  .rows{display:flex;flex-direction:column;gap:6px;border-top:1px solid var(--line);padding-top:11px}
+  .row{display:flex;gap:9px;font-size:12.5px;align-items:baseline}
+  .row .k{flex:0 0 46px;color:var(--snow-faint);font-size:11px;font-weight:700;letter-spacing:.06em}
+  .row .v{color:var(--snow-dim);flex:1}.row .v b{color:var(--snow);font-weight:500}
+  .open-pair{display:flex;flex-direction:column;gap:3px}
+  .op{display:flex;gap:6px}
+  .op .src{flex:0 0 auto;font-size:10px;font-weight:700;padding:1px 6px;border-radius:5px;height:fit-content;margin-top:1px}
+  .op .src.bt{background:rgba(95,182,207,.14);color:var(--frost)}
+  .op .src.dlc{background:rgba(216,69,58,.14);color:var(--vermilion-soft)}
+  .cnote{margin-top:12px;font-size:12.5px;color:var(--snow-dim);background:rgba(95,182,207,.06);border-left:2px solid var(--frost);padding:8px 12px;border-radius:0 8px 8px 0}
+  .cnote b{color:var(--frost);font-weight:700}
+  .char.generic .seal{background:linear-gradient(160deg,#4a5568,#2d3748)}
+  .char.generic .card{border-color:rgba(95,182,207,.16)}
+  footer{margin-top:46px;padding:34px 20px 56px;text-align:center;color:var(--snow-faint);font-size:12.5px;border-top:1px solid var(--line)}
+  footer b{color:var(--snow-dim);font-weight:500}
+  ::selection{background:rgba(216,69,58,.35);color:#fff}
+  .hero{overflow:hidden}
+  .hero-horizon{position:absolute;left:0;right:0;bottom:0;width:100%;height:84px;opacity:.95;pointer-events:none;z-index:0}
+  .hero>*:not(.hero-horizon){position:relative;z-index:1}
+  .hero-crest{width:108px;height:108px;display:block;margin:0 auto 6px}
+  .sec-ico{position:relative;flex:0 0 auto;width:38px;height:38px;border-radius:10px;background:var(--ink-3);border:1px solid var(--line-strong);display:grid;place-items:center;color:var(--frost);transform:rotate(-3deg)}
+  .sec-ico svg{width:21px;height:21px;transform:rotate(3deg)}
+  .sec-ico .no{position:absolute;right:-6px;top:-7px;font-family:"Noto Serif SC","Songti SC","STSong","SimSun",serif;font-weight:900;font-size:11px;color:#0a0e16;background:var(--vermilion);width:18px;height:18px;border-radius:6px;display:grid;place-items:center;box-shadow:0 2px 8px rgba(216,69,58,.35)}
+  .char-ele{flex:0 0 auto;width:30px;height:30px;color:var(--snow-faint);opacity:.85}
+  .char-ele svg{width:30px;height:30px;stroke-width:1.35}
+  .char.generic .char-ele{color:var(--frost);opacity:.6}
+  .pick .p{position:relative}
+  .pick .pico{position:absolute;right:13px;top:13px;width:22px;height:22px;color:var(--vermilion-soft);opacity:.6}
+  .pick .pico svg{width:22px;height:22px}
+  .pick .p .val{padding-right:26px}
+</style>
+</head>
+<body>
+<canvas id="snow"></canvas>
+
+<header class="hero">
+  <svg class="hero-horizon" viewBox="0 0 1200 140" preserveAspectRatio="none" aria-hidden="true">
+  <path d="M0 140 L0 96 L130 58 L250 92 L380 44 L520 90 L660 38 L800 86 L940 54 L1080 88 L1200 60 L1200 140 Z" fill="rgba(95,182,207,.06)"/>
+  <path d="M0 140 L0 114 L170 82 L330 108 L480 72 L630 102 L780 68 L940 102 L1090 80 L1200 106 L1200 140 Z" fill="rgba(11,15,22,.9)" stroke="rgba(234,240,247,.07)" stroke-width="1"/>
+</svg>
+  <svg class="hero-crest" viewBox="0 0 120 120" fill="none" aria-hidden="true">
+  <circle cx="60" cy="60" r="56" stroke="rgba(234,240,247,.16)" stroke-width="1.5"/>
+  <circle cx="60" cy="60" r="47" stroke="rgba(216,69,58,.45)" stroke-width="1" stroke-dasharray="2 5"/>
+  <circle cx="60" cy="46" r="12" fill="#d8453a" fill-opacity=".88"/>
+  <path d="M20 84 L46 52 L60 68 L74 50 L100 84 Z" fill="#0c1119" stroke="rgba(234,240,247,.55)" stroke-width="1.4" stroke-linejoin="round"/>
+  <path d="M38 90 L66 58" stroke="rgba(234,240,247,.78)" stroke-width="2.2" stroke-linecap="round"/>
+  <path d="M82 90 L54 58" stroke="rgba(234,240,247,.78)" stroke-width="2.2" stroke-linecap="round"/>
+  <path d="M35 92 L41 87 M85 92 L79 87" stroke="#d6a23a" stroke-width="2.6" stroke-linecap="round"/>
+  <circle cx="40" cy="40" r="1.2" fill="#eaf0f7"/><circle cx="84" cy="44" r="1" fill="#eaf0f7"/><circle cx="74" cy="33" r="1.3" fill="#eaf0f7"/>
+</svg>
+  <div class="eyebrow">侠士狴犴 · 万种变化</div>
+  <h1>暖雪</h1>
+  <div class="sub">流派秘籍全集</div>
+  <div class="meta">开荒 · 速刷红魂 · 天赋 · <b>22</b>套配装 · 机制 · 技巧 · 收集</div>
+</header>
+
+<div class="wrap">
+  <div class="pick">
+    <div class="p"><span class="pico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M13 3 6 13h5l-1 8 8-12h-5z"/></svg></span><div class="lab">刷红魂</div><div class="val">怒雷·雷神流<small>无限滑铲 · 配红魂挑战</small></div></div>
+    <div class="p"><span class="pico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="7" r="2.4"/><circle cx="12" cy="14.6" r="4"/><path d="M10.5 9c.4.8.4 1.6 0 2.4M13.5 9c-.4.8-.4 1.6 0 2.4M10.5 4.6h3"/></svg></span><div class="lab">打 BOSS</div><div class="val">神饮·蛇酒<small>百分比 + 真伤啃血</small></div></div>
+    <div class="p"><span class="pico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8 6h6l-6 8h6"/><path d="M15 14h4l-4 5h4"/></svg></span><div class="lab">挂机无尽</div><div class="val">倒地流<small>成型即秒 · 解放双手</small></div></div>
+    <div class="p"><span class="pico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 5.5c4.5-1.2 9.5-1.2 14 0 .3 6-1 10.3-4.2 13.2-1.1 1-2 1.3-2.8 1.3s-1.7-.3-2.8-1.3C6 15.8 4.7 11.5 5 5.5z"/><path d="M8.5 9.5c.6.5 1.6.5 2.2 0M13.3 9.5c.6.5 1.6.5 2.2 0M10 14c1.2 1 2.8 1 4 0"/></svg></span><div class="lab">肝皮肤</div><div class="val">发光流<small>生命之种 + 劝君莫停</small></div></div>
+  </div>
+</div>
+
+<nav class="bar"><div class="bar-inner"><a class="nlink" href="#s-start" data-t="s-start">开荒</a><a class="nlink" href="#s-soul" data-t="s-soul">刷红魂</a><a class="nlink" href="#s-talent" data-t="s-talent">天赋</a><a class="nlink" href="#s-build" data-t="s-build">配装</a><a class="nlink" href="#s-mech" data-t="s-mech">机制</a><a class="nlink" href="#s-tip" data-t="s-tip">技巧</a><a class="nlink" href="#s-codex" data-t="s-codex">见闻录</a><a class="nlink" href="#s-skin" data-t="s-skin">皮肤</a><a class="nlink" href="#s-npc" data-t="s-npc">NPC</a></div></nav>
+
+<main class="wrap">
+
+  <section class="sec" id="s-start">
+    <div class="sec-head"><span class="sec-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 20h18"/><path d="m4 20 6-11 3.5 6 2-3.5 4.5 8.5"/><path d="M10 9V3l5 1.8L10 6.6"/></svg><span class="no">壹</span></span><h2 class="sec-title">开荒路线</h2><span class="sec-rule"></span></div>
+    <p class="sec-lead">新号从零到通关一周目的最短路径。一句话:<b>用七剑修罗·无影,低难度先把第一章吕坤海打过去</b>——它是后面所有内容的钥匙。</p>
+    <div class="ladder">
+      <div class="rung"><div class="d">细雪</div><div class="t">开荒首选</div></div>
+      <div class="rung"><div class="d">中雪</div><div class="t">&nbsp;</div></div>
+      <div class="rung"><div class="d">大雪</div><div class="t">&nbsp;</div></div>
+      <div class="rung"><div class="d">虐雪</div><div class="t">&nbsp;</div></div>
+      <div class="rung"><div class="d">狂雪</div><div class="t">通关解锁白灰</div></div>
+      <div class="rung"><div class="d">白灰</div><div class="t">金色手皮肤</div></div>
+    </div>
+    <div class="call tip" style="margin-top:14px"><b>难度在慈母/观音像调。</b>开荒一律细雪,别硬上高难度。</div>
+    <div class="steps" style="margin-top:16px">
+      <div class="step"><div class="sn">壹</div><div class="sc"><h4>选七剑修罗·剑二(无影)</h4><p>朝拜佛像时<b>右边是剑二</b>。无影把飞剑融进普攻,飞剑命中出"破"、下一下近战打高伤,<b>按住攻击糊脸</b>就行。剑一(连击)较鸡肋,别选。</p></div></div>
+      <div class="step"><div class="sn">贰</div><div class="sc"><h4>圣物优先近战词条</h4><p>核心位 SL 抠 <span class="hl">憎恨之心</span>(100% 全攻击无副作用)&gt; 三色结晶 &gt; 狼王白鬃;力量位玄武之魂。看到 <b>空明</b>(橙/红)就拿,无影配空明近乎无限无敌。</p></div></div>
+      <div class="step"><div class="sn">叁</div><div class="sc"><h4>打不过就刷序章点天赋</h4><p>卡在吕坤海别死磕——反复刷序章攒红魂点天赋。<b>前期把天赋点起来,基本什么圣物都能过</b>。这是开荒的真正地基。</p></div></div>
+      <div class="step"><div class="sn">肆</div><div class="sc"><h4>通关第一章 → 全盘解锁</h4><p>打过吕坤海:①解锁神饮明王(火葫芦);②开启"重开刷第一章 <span class="hl">5–7 红魂/把</span>"的快循环。继续推到通关一周目,即可进 DLC。</p></div></div>
+    </div>
+    <div class="call warn"><b>走火入魔别裸点。</b>它 +300% 攻击但 -300% 防御,新手没容错会暴毙;先点绿天赋或拿到空明无敌再上。</div>
+  </section>
+
+  <section class="sec" id="s-soul">
+    <div class="sec-head"><span class="sec-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c.5 3 4 4.2 4 8.2A4 4 0 0 1 8 12c0-2 1-3.2 2-4 .3 1.8 1.7 1.8 2 .2.2-1.6-.6-2.7 0-5.4z"/></svg><span class="no">贰</span></span><h2 class="sec-title">速刷红魂</h2><span class="sec-rule"></span></div>
+    <p class="sec-lead">通关一周目、进终业 DLC 后,才有真正的大批量刷法:<b>红魂挑战叠满 + 刷序章</b>,一把约 300 红魂、13 分钟。</p>
+    <div class="steps">
+      <div class="step"><div class="sn">壹</div><div class="sc"><h4>解锁红魂挑战 NPC</h4><p>佛堂里花红魂解锁卖红魂挑战的 NPC(<b>建议先把科技树点满</b>再解锁)。</p></div></div>
+      <div class="step"><div class="sn">贰</div><div class="sc"><h4>出门前疯狂叠挑战</h4><p>每"选择"一个挑战就 <b>叠一层 debuff + 一份红魂奖励</b>。界面只有 5 个展示位,但选完立刻刷新顶上,所以<span class="hl">可以连选 n 个不断叠加</span>,叠到你的流派还能轻松清的数量(十几个),奖励就堆到三百多。</p></div></div>
+      <div class="step"><div class="sn">叁</div><div class="sc"><h4>专挑序章刷</h4><p>序章最短,叠满奖励却只用打一小段,<b>红魂/分钟最高</b>。用强力流派一路清掉,结算领魂,约 13 分钟一把,重复。</p></div></div>
+    </div>
+    <div class="call warn"><b>这些挑战拖节奏/致命,跳过:</b>以瞬代步(基本没法走路)、命定死亡(不熟 BOSS 别碰)、索命鸳鸯(成型前比 BOSS 还狠)、灵魂重担、混沌现实。位子卡到难的就卡死重置刷掉。</div>
+    <div class="call tip"><b>早期没 DLC 时的过渡刷法:</b>打过第一章后,利用"离开场景前暂停 → 重新开始"反复刷第一章,每把拿 5–7 红魂;红魂是永久的,退出/重开不会丢。遇到打不过的强敌选"逃跑/放弃",还会按剩余血量百分比返还红魂。</div>
+  </section>
+
+  <section class="sec" id="s-talent">
+    <div class="sec-head"><span class="sec-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21v-6"/><circle cx="12" cy="5" r="2.5"/><circle cx="6" cy="11" r="2.2"/><circle cx="18" cy="11" r="2.2"/><path d="M12 15l-4.3-3M12 15l4.3-3M10.4 6.6 7.6 9.4M13.6 6.6l2.8 2.8"/></svg><span class="no">叁</span></span><h2 class="sec-title">天赋加点</h2><span class="sec-rule"></span></div>
+    <p class="sec-lead">本体树和终业树是两套独立盘,红魂越多开局加成越强。这两套的加点顺序如下。</p>
+    <div class="grid2">
+      <div class="mech"><div class="mt"><h4>本体树 · 红黄绿</h4><span class="badge util">新手地基</span></div>
+        <p><b>① 绿色系前半页</b> — 最优先。开局没减伤、血上限仅 100、不能精炼加血,容易被走火反伤打死;前半页补容错,还解锁神器 <b>玄武之魂</b>。<br>
+        <b>② 黄色系点满</b> — 出门自带两圣物 + 一本秘籍,开荒最大一次提升。<br>
+        <b>③ 红色系</b> — 攻击/伤害向,拉面板。<br>
+        <b>④ 绿色后半页 + 杂项</b> 收尾。</p>
+        <div class="mtip">树不大,速刷细雪几盘就全满,顺序只影响最初几十红魂。</div></div>
+      <div class="mech"><div class="mt"><h4>终业树 · 命杀炼</h4><span class="badge boss">DLC 进阶</span></div>
+        <p><b>命</b>=防御(生命/减伤/葫芦次数)、<b>杀</b>=输出、<b>炼</b>=运气/死后货币存留等杂项。<br>
+        顺序:<b>优先杀 → 其次命 → 炼最后</b>(炼前四排前期没用,别浪费)。<br>
+        杀天赋:<b>左列中列=近战,右列=远程</b>;飞剑远程通关效率低,建议走近战。</p>
+        <div class="mtip">魂多势众是发育型,平民不太建议学,容易浪费一个秘籍位。</div></div>
+    </div>
+  </section>
+
+  <section class="sec" id="s-build">
+    <div class="sec-head"><span class="sec-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 5 5.8v5.4c0 4 3 6.8 7 8.8 4-2 7-4.8 7-8.8V5.8z"/><path d="m9.5 10.5 2.5-2.5 2.5 2.5L12 14.5z"/></svg><span class="no">肆</span></span><h2 class="sec-title">流派配装</h2><span class="sec-rule"></span></div>
+    <p class="sec-lead">十职业 · 二十二套配装速查(含 2 套通用冷门)。<b>淡字</b>=可替换,<b>母印/母神</b>=母神旧印(无限R),<b>劝君莫停</b>=DLC 关键挑战圣物。</p>
+    <div class="subnav"><a class="chip" href="#b0">七剑修罗</a><a class="chip" href="#b1">无量尊者</a><a class="chip" href="#b2">神饮明王</a><a class="chip" href="#b3">圣威怒雷金刚</a><a class="chip" href="#b4">三川苦寒菩萨</a><a class="chip" href="#b5">三尸慈姑娘娘</a><a class="chip" href="#b6">神行迷踪天尊</a><a class="chip" href="#b7">灵剑修罗</a><a class="chip" href="#b8">阎罗地藏明王</a><a class="chip" href="#b9">日月轮转双天</a><a class="chip" href="#b10">通用冷门</a></div>
+    <div class="blegend">
+      <span class="pos"><span class="dot p1">①</span>核心</span>
+      <span class="pos"><span class="dot p2">②</span>力量</span>
+      <span class="pos"><span class="dot p3">③</span>敏捷</span>
+      <span class="pos"><span class="dot p4">④</span>功效</span>
+      <span class="sym"><b>&gt;</b> 表优先级</span>
+    </div>
+    <div class="char " id="b0">
+      <div class="char-head"><div class="seal">剑</div><div class="char-name">七剑修罗</div><div class="char-rule"></div><div class="char-ele"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M18 4 9 13l-1.6 4.6L12 16l9-9z"/><path d="M6.6 17.4 4 20"/><path d="m15 7 2 2"/></svg></div></div>
+      <div class="builds"><div class="card ">
+      <div class="card-top"><span class="branch">剑一</span><span class="flow">飞剑流</span></div>
+      <div class="relics"><div class="relic r1"><span class="rnum">①</span><span class="ritems"><span class="main">灵玉</span> </span></div><div class="relic r2"><span class="rnum">②</span><span class="ritems"><span class="main">灵玉</span> <span class="alt">/ 青龙</span></span></div><div class="relic r3"><span class="rnum">③</span><span class="ritems"><span class="main">踏风草</span> </span></div><div class="relic r4"><span class="rnum">④</span><span class="ritems"><span class="main">猪心</span> </span></div></div>
+      <div class="rows">
+        <div class="row"><span class="k">开局</span><span class="v"><div class="open-pair">
+          <div class="op"><span class="src bt">本体</span><span>③踏风草 + ④猪心(或猪心+任意)</span></div>
+          <div class="op"><span class="src dlc">DLC</span><span>③踏风草(或 ④母印·劝君莫停)</span></div></div></span></div>
+        <div class="row"><span class="k">武器</span><span class="v"><b>太祖 > 鹰眼</b></span></div>
+        <div class="row"><span class="k">秘籍</span><span class="v"><b>破灭 · 冷血 · 百刃倾泻</b></span></div>
+      </div></div><div class="card j2">
+      <div class="card-top"><span class="branch">剑二</span><span class="flow">疯狗血流</span></div>
+      <div class="relics"><div class="relic r1"><span class="rnum">①</span><span class="ritems"><span class="main">须臾</span> <span class="alt">/ 变异残肢</span></span></div><div class="relic r2"><span class="rnum">②</span><span class="ritems"><span class="main">猛虎印<span class="must">★必备</span></span> </span></div><div class="relic r3"><span class="rnum">③</span><span class="ritems"><span class="main">青钢</span> </span></div><div class="relic r4"><span class="rnum">④</span><span class="ritems"><span class="main">变异残肢</span> </span></div></div>
+      <div class="rows">
+        <div class="row"><span class="k">开局</span><span class="v"><div class="open-pair">
+          <div class="op"><span class="src bt">本体</span><span>②猛虎印 + ④变异残肢(或 ①须臾+②猛虎印)</span></div>
+          <div class="op"><span class="src dlc">DLC</span><span>②猛虎印</span></div></div></span></div>
+        <div class="row"><span class="k">武器</span><span class="v"><b>猛狗荒 > 太祖</b></span></div>
+        <div class="row"><span class="k">秘籍</span><span class="v"><b>破灭 · 百刃倾泻 · 冷血</b></span></div>
+      </div></div></div></div><div class="char " id="b1">
+      <div class="char-head"><div class="seal">量</div><div class="char-name">无量尊者</div><div class="char-rule"></div><div class="char-ele"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 5 19 19M19 5 5 19"/><path d="M5 5h2.6M5 5v2.6M19 5h-2.6M19 5v2.6"/></svg></div></div>
+      <div class="builds"><div class="card ">
+      <div class="card-top"><span class="branch">剑一</span><span class="flow">剑来流</span></div>
+      <div class="relics"><div class="relic r1"><span class="rnum">①</span><span class="ritems"><span class="main">灵玉</span> </span></div><div class="relic r2"><span class="rnum">②</span><span class="ritems"><span class="main">灵玉</span> <span class="alt">/ 青龙</span></span></div><div class="relic r3"><span class="rnum">③</span><span class="ritems"><span class="main">堕龙</span> </span></div><div class="relic r4"><span class="rnum">④</span><span class="ritems"><span class="main">青龙</span> </span></div></div>
+      <div class="rows">
+        <div class="row"><span class="k">开局</span><span class="v"><div class="open-pair">
+          <div class="op"><span class="src bt">本体</span><span>③堕龙 + ④青龙</span></div>
+          <div class="op"><span class="src dlc">DLC</span><span>④母印(劝君莫停)</span></div></div></span></div>
+        <div class="row"><span class="k">武器</span><span class="v"><b>骤雨 > 太祖</b></span></div>
+        <div class="row"><span class="k">秘籍</span><span class="v"><b>贯穿之刃 · 走火入魔</b></span></div>
+      </div></div><div class="card j2">
+      <div class="card-top"><span class="branch">剑二</span><span class="flow">激光流</span></div>
+      <div class="relics"><div class="relic r1"><span class="rnum">①</span><span class="ritems"><span class="main">灵玉</span> <span class="alt">/ 神皇威装</span></span></div><div class="relic r2"><span class="rnum">②</span><span class="ritems"><span class="main">青龙</span> </span></div><div class="relic r3"><span class="rnum">③</span><span class="ritems"><span class="main">踏风草</span> </span></div><div class="relic r4"><span class="rnum">④</span><span class="ritems"><span class="main">猪心</span> <span class="alt">/ 母神</span></span></div></div>
+      <div class="rows">
+        <div class="row"><span class="k">开局</span><span class="v"><div class="open-pair">
+          <div class="op"><span class="src bt">本体</span><span>③踏风草 + ④猪心</span></div>
+          <div class="op"><span class="src dlc">DLC</span><span>④母神(劝君莫停)</span></div></div></span></div>
+        <div class="row"><span class="k">武器</span><span class="v"><b>太祖 > 堕日</b></span></div>
+        <div class="row"><span class="k">秘籍</span><span class="v"><b>贯日强化 · 飞剑专精</b></span></div>
+      </div></div></div></div><div class="char " id="b2">
+      <div class="char-head"><div class="seal">酒</div><div class="char-name">神饮明王</div><div class="char-rule"></div><div class="char-ele"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="7" r="2.4"/><circle cx="12" cy="14.6" r="4"/><path d="M10.5 9c.4.8.4 1.6 0 2.4M13.5 9c-.4.8-.4 1.6 0 2.4M10.5 4.6h3"/></svg></div></div>
+      <div class="builds"><div class="card ">
+      <div class="card-top"><span class="branch">剑一</span><span class="flow">狗都不玩</span></div>
+      <div class="relics"><div class="relic r1"><span class="rnum">①</span><span class="ritems"><span class="main">黑火药</span> </span></div><div class="relic r2"><span class="rnum">②</span><span class="ritems"><span class="main">黑火药</span> <span class="alt">毒火换断指</span></span></div><div class="relic r3"><span class="rnum">③</span><span class="ritems"><span class="main">堕龙</span> <span class="alt">毒火换雄黄</span></span></div><div class="relic r4"><span class="rnum">④</span><span class="ritems"><span class="main">猪心</span> <span class="alt">毒火换断指</span></span></div></div>
+      <div class="rows">
+        <div class="row"><span class="k">开局</span><span class="v"><div class="open-pair">
+          <div class="op"><span class="src bt">本体</span><span>③堕龙 + ④猪心</span></div>
+          <div class="op"><span class="src dlc">DLC</span><span>④母神(劝君莫停) · ③堕龙</span></div></div></span></div>
+        <div class="row"><span class="k">武器</span><span class="v"><b>爆燃专武 > 太祖</b></span></div>
+        <div class="row"><span class="k">秘籍</span><span class="v"><b>真酒(蛇酒) · 爆燃</b></span></div>
+      </div></div><div class="card j2">
+      <div class="card-top"><span class="branch">剑二</span><span class="flow">核弹流</span><span class="tag">刷红魂 / 打BOSS</span></div>
+      <div class="relics"><div class="relic r1"><span class="rnum">①</span><span class="ritems"><span class="main">墨火</span> <span class="alt">/ 黑火药</span></span></div><div class="relic r2"><span class="rnum">②</span><span class="ritems"><span class="main">黑火药</span> </span></div><div class="relic r3"><span class="rnum">③</span><span class="ritems"><span class="main">堕龙</span> </span></div><div class="relic r4"><span class="rnum">④</span><span class="ritems"><span class="main">火哨石<span class="must">★唯一真神</span></span> </span></div></div>
+      <div class="rows">
+        <div class="row"><span class="k">开局</span><span class="v"><div class="open-pair">
+          <div class="op"><span class="src bt">本体</span><span>④火哨石 + ③堕龙</span></div>
+          <div class="op"><span class="src dlc">DLC</span><span>④火哨石</span></div></div></span></div>
+        <div class="row"><span class="k">武器</span><span class="v"><b>爆燃专武 > 太祖</b></span></div>
+        <div class="row"><span class="k">秘籍</span><span class="v"><b>真酒(蛇酒) · 爆燃</b></span></div>
+      </div></div></div></div><div class="char " id="b3">
+      <div class="char-head"><div class="seal">雷</div><div class="char-name">圣威怒雷金刚</div><div class="char-rule"></div><div class="char-ele"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M13 3 6 13h5l-1 8 8-12h-5z"/></svg></div></div>
+      <div class="builds"><div class="card ">
+      <div class="card-top"><span class="branch">剑一</span><span class="flow">雷神流</span><span class="tag">刷红魂 · 滑铲</span></div>
+      <div class="relics"><div class="relic r1"><span class="rnum">①</span><span class="ritems"><span class="main">三色</span> </span></div><div class="relic r2"><span class="rnum">②</span><span class="ritems"><span class="main">灵玉</span> <span class="alt">/ 青龙</span></span></div><div class="relic r3"><span class="rnum">③</span><span class="ritems"><span class="main">踏风</span> <span class="alt">/ 须臾</span></span></div><div class="relic r4"><span class="rnum">④</span><span class="ritems"><span class="main">猪心</span> <span class="alt">/ 引雷锁</span></span></div></div>
+      <div class="rows">
+        <div class="row"><span class="k">开局</span><span class="v"><div class="open-pair">
+          <div class="op"><span class="src bt">本体</span><span>③踏风草 + ④引雷锁</span></div>
+          <div class="op"><span class="src dlc">DLC</span><span>③踏风草</span></div></div></span></div>
+        <div class="row"><span class="k">武器</span><span class="v"><b>万钧 > 太祖</b></span></div>
+        <div class="row"><span class="k">秘籍</span><span class="v"><b>雷铠 · 走火入魔</b></span></div>
+      </div></div><div class="card j2">
+      <div class="card-top"><span class="branch">剑二</span><span class="flow">低配疯狗流</span></div>
+      <div class="relics"><div class="relic r1"><span class="rnum">①</span><span class="ritems"><span class="main">白虎</span> </span></div><div class="relic r2"><span class="rnum">②</span><span class="ritems"><span class="main">猛虎印</span> </span></div><div class="relic r3"><span class="rnum">③</span><span class="ritems"><span class="main">须臾</span> </span></div><div class="relic r4"><span class="rnum">④</span><span class="ritems"><span class="main">引雷锁</span> </span></div></div>
+      <div class="rows">
+        <div class="row"><span class="k">开局</span><span class="v"><div class="open-pair">
+          <div class="op"><span class="src bt">本体</span><span>③踏风草 + ②猛虎印</span></div>
+          <div class="op"><span class="src dlc">DLC</span><span>③踏风草</span></div></div></span></div>
+        <div class="row"><span class="k">武器</span><span class="v"><b>猛狗荒 > 雷息</b></span></div>
+        <div class="row"><span class="k">秘籍</span><span class="v"><b>雷铠 · 雷刃 · 狂风之刃</b></span></div>
+      </div></div></div></div><div class="char " id="b4">
+      <div class="char-head"><div class="seal">冰</div><div class="char-name">三川苦寒菩萨</div><div class="char-rule"></div><div class="char-ele"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18M4 7.5 20 16.5M20 7.5 4 16.5"/><path d="m9.5 5 2.5 1.5L14.5 5M9.5 19l2.5-1.5L14.5 19M4.8 9.6l2.8.3M4.8 14.4l2.8-.3M19.2 9.6l-2.8.3M19.2 14.4l-2.8-.3"/></svg></div></div>
+      <div class="builds"><div class="card ">
+      <div class="card-top"><span class="branch">剑一</span><span class="flow">小小冰无力</span></div>
+      <div class="relics"><div class="relic r1"><span class="rnum">①</span><span class="ritems"><span class="main">千年寒冰</span> </span></div><div class="relic r2"><span class="rnum">②</span><span class="ritems"><span class="main">灵玉</span> <span class="alt">/ 青龙</span></span></div><div class="relic r3"><span class="rnum">③</span><span class="ritems"><span class="main">踏风草</span> <span class="alt">/ 堕龙</span></span></div><div class="relic r4"><span class="rnum">④</span><span class="ritems"><span class="main">猪心</span> <span class="alt">/ 破冰石</span></span></div></div>
+      <div class="rows">
+        <div class="row"><span class="k">开局</span><span class="v"><div class="open-pair">
+          <div class="op"><span class="src bt">本体</span><span>③踏风草 + ①千年寒冰</span></div>
+          <div class="op"><span class="src dlc">DLC</span><span>③踏风草 + ④母印</span></div></div></span></div>
+        <div class="row"><span class="k">武器</span><span class="v"><b>专武 > 太祖</b></span></div>
+        <div class="row"><span class="k">秘籍</span><span class="v"><b>寂灭之眼 · 坏死恶寒</b></span></div>
+      </div></div><div class="card j2">
+      <div class="card-top"><span class="branch">剑二</span><span class="flow">攻速冰冻流</span></div>
+      <div class="relics"><div class="relic r1"><span class="rnum">①</span><span class="ritems"><span class="main">须臾</span> </span></div><div class="relic r2"><span class="rnum">②</span><span class="ritems"><span class="main">堕龙</span> <span class="alt">/ 凝气草</span></span></div><div class="relic r3"><span class="rnum">③</span><span class="ritems"><span class="main">须臾</span> </span></div><div class="relic r4"><span class="rnum">④</span><span class="ritems"><span class="main">猪心</span> <span class="alt">/ 破冰石</span></span></div></div>
+      <div class="rows">
+        <div class="row"><span class="k">开局</span><span class="v"><div class="open-pair">
+          <div class="op"><span class="src bt">本体</span><span>①须臾 + ④破冰石</span></div>
+          <div class="op"><span class="src dlc">DLC</span><span>①须臾</span></div></div></span></div>
+        <div class="row"><span class="k">武器</span><span class="v"><b>专武 > 空明</b></span></div>
+        <div class="row"><span class="k">秘籍</span><span class="v"><b>寂灭之眼 · 狂风之刃</b></span></div>
+      </div></div></div></div><div class="char " id="b5">
+      <div class="char-head"><div class="seal">毒</div><div class="char-name">三尸慈姑娘娘</div><div class="char-rule"></div><div class="char-ele"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.2c3.2 0 5.5 2.4 5.5 5.6 0 2-1 3.2-1 4.7v1a1 1 0 0 1-1 1H8.5a1 1 0 0 1-1-1v-1c0-1.5-1-2.7-1-4.7C6.5 5.6 8.8 3.2 12 3.2z"/><circle cx="9.6" cy="9.4" r="1.3"/><circle cx="14.4" cy="9.4" r="1.3"/><path d="M10 16.5v2.3M14 16.5v2.3M12 16.5v2.6"/></svg></div></div>
+      <div class="builds"><div class="card ">
+      <div class="card-top"><span class="branch">剑一</span><span class="flow">远程磨血流</span></div>
+      <div class="relics"><div class="relic r1"><span class="rnum">①</span><span class="ritems"><span class="main">猪心</span> </span></div><div class="relic r2"><span class="rnum">②</span><span class="ritems"><span class="main">断指</span> <span class="alt">/ 青龙</span></span></div><div class="relic r3"><span class="rnum">③</span><span class="ritems"><span class="main">母神</span> <span class="alt">/ 堕龙</span></span></div><div class="relic r4"><span class="rnum">④</span><span class="ritems"><span class="main">猪心</span> </span></div></div>
+      <div class="rows">
+        <div class="row"><span class="k">开局</span><span class="v"><div class="open-pair">
+          <div class="op"><span class="src bt">本体</span><span>①猪心 + ④猪心</span></div>
+          <div class="op"><span class="src dlc">DLC</span><span>①猪心 · ③母神</span></div></div></span></div>
+        <div class="row"><span class="k">武器</span><span class="v"><b>血虱 > 太祖</b></span></div>
+        <div class="row"><span class="k">秘籍</span><span class="v"><b>万毒尸身 · 走火入魔</b></span></div>
+      </div></div><div class="card j2">
+      <div class="card-top"><span class="branch">剑二</span><span class="flow">毒爆流</span></div>
+      <div class="relics"><div class="relic r1"><span class="rnum">①</span><span class="ritems"><span class="main">灵玉</span> <span class="alt">/ 鬼发</span></span></div><div class="relic r2"><span class="rnum">②</span><span class="ritems"><span class="main">毒囊</span> <span class="alt">/ 灵玉</span></span></div><div class="relic r3"><span class="rnum">③</span><span class="ritems"><span class="main">踏风草</span> <span class="alt">/ 堕龙</span></span></div><div class="relic r4"><span class="rnum">④</span><span class="ritems"><span class="main">猪心</span> </span></div></div>
+      <div class="rows">
+        <div class="row"><span class="k">开局</span><span class="v"><div class="open-pair">
+          <div class="op"><span class="src bt">本体</span><span>③踏风草 + ④猪心</span></div>
+          <div class="op"><span class="src dlc">DLC</span><span>③踏风草</span></div></div></span></div>
+        <div class="row"><span class="k">武器</span><span class="v"><b>百足 > 太祖</b></span></div>
+        <div class="row"><span class="k">秘籍</span><span class="v"><b>万毒尸身 · 血疫</b></span></div>
+      </div></div></div></div><div class="char " id="b6">
+      <div class="char-head"><div class="seal">迷</div><div class="char-name">神行迷踪天尊</div><div class="char-rule"></div><div class="char-ele"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8.5h10.5A2.5 2.5 0 1 0 11 6"/><path d="M3 12.5h13.5A2.5 2.5 0 1 1 14 15"/><path d="M3 16.5h8"/></svg></div></div>
+      <div class="builds"><div class="card ">
+      <div class="card-top"><span class="branch">剑一</span><span class="flow">格挡王</span></div>
+      <div class="relics"><div class="relic r1"><span class="rnum">①</span><span class="ritems"><span class="main">须臾</span> <span class="alt">/ 踏风草</span></span></div><div class="relic r2"><span class="rnum">②</span><span class="ritems"><span class="main">堕龙</span> <span class="alt">/ 白虎</span></span></div><div class="relic r3"><span class="rnum">③</span><span class="ritems"><span class="main">堕龙</span> <span class="alt">机关喷口·绑墨火</span></span></div><div class="relic r4"><span class="rnum">④</span><span class="ritems"><span class="main">猪心</span> <span class="alt">墨火结晶·绑喷口</span></span></div></div>
+      <div class="rows">
+        <div class="row"><span class="k">开局</span><span class="v"><div class="open-pair">
+          <div class="op"><span class="src bt">本体</span><span>③喷口 + ④墨火(前期无敌)</span></div>
+          <div class="op"><span class="src dlc">DLC</span><span>④母神印(须有劝君莫停)</span></div></div></span></div>
+        <div class="row"><span class="k">武器</span><span class="v"><b>专武 > 太祖</b></span></div>
+        <div class="row"><span class="k">秘籍</span><span class="v"><b>如幻 · 一刻 · 刹那之辉</b></span></div>
+      </div></div><div class="card j2">
+      <div class="card-top"><span class="branch">剑二</span><span class="flow">华尔兹舞步</span></div>
+      <div class="relics"><div class="relic r1"><span class="rnum">①</span><span class="ritems"><span class="main">须臾</span> </span></div><div class="relic r2"><span class="rnum">②</span><span class="ritems"><span class="main">猛虎印</span> <span class="alt">/ 青龙</span></span></div><div class="relic r3"><span class="rnum">③</span><span class="ritems"><span class="main">踏风草<span class="must">★必备</span></span> </span></div><div class="relic r4"><span class="rnum">④</span><span class="ritems"><span class="main">猪心</span> </span></div></div>
+      <div class="rows">
+        <div class="row"><span class="k">开局</span><span class="v"><div class="open-pair">
+          <div class="op"><span class="src bt">本体</span><span>③踏风草 + ④猪心</span></div>
+          <div class="op"><span class="src dlc">DLC</span><span>④母神(劝君莫停)</span></div></div></span></div>
+        <div class="row"><span class="k">武器</span><span class="v"><b>专武</b></span></div>
+        <div class="row"><span class="k">秘籍</span><span class="v"><b>如幻 · 刹那之辉</b></span></div>
+      </div></div></div><div class="cnote"><b>玩法</b> 本体:A + 瞬步 + 刀舞 = 丝血;DLC:劝君莫停 + 母神 = 无敌。</div></div><div class="char " id="b7">
+      <div class="char-head"><div class="seal">灵</div><div class="char-name">灵剑修罗</div><div class="char-rule"></div><div class="char-ele"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M17 4 9.5 11.5 8 15l3.5-1.5L19 6z"/><path d="M7.2 14.8 5 17"/><circle cx="6" cy="6" r="1.1"/><circle cx="18" cy="16" r="1.1"/><circle cx="5.5" cy="11" r=".8"/></svg></div></div>
+      <div class="builds"><div class="card ">
+      <div class="card-top"><span class="branch">剑一</span><span class="flow">低配剑仙</span></div>
+      <div class="relics"><div class="relic r1"><span class="rnum">①</span><span class="ritems"><span class="main">猪心</span> <span class="alt">/ 神皇威装</span></span></div><div class="relic r2"><span class="rnum">②</span><span class="ritems"><span class="main">灵玉</span> <span class="alt">/ 青龙</span></span></div><div class="relic r3"><span class="rnum">③</span><span class="ritems"><span class="main">踏风草</span> <span class="alt">/ 堕龙</span></span></div><div class="relic r4"><span class="rnum">④</span><span class="ritems"><span class="main">猪心</span> <span class="alt">/ 青龙</span></span></div></div>
+      <div class="rows">
+        <div class="row"><span class="k">开局</span><span class="v"><div class="open-pair">
+          <div class="op"><span class="src bt">本体</span><span>③踏风草 + ④猪心</span></div>
+          <div class="op"><span class="src dlc">DLC</span><span>③踏风草</span></div></div></span></div>
+        <div class="row"><span class="k">武器</span><span class="v"><b>鹰眼 > 太祖</b></span></div>
+        <div class="row"><span class="k">秘籍</span><span class="v"><b>万径踪灭 · 万劫天印</b></span></div>
+      </div></div><div class="card j2">
+      <div class="card-top"><span class="branch">剑二</span><span class="flow">万剑归众流</span></div>
+      <div class="relics"><div class="relic r1"><span class="rnum">①</span><span class="ritems"><span class="main">猪心</span> <span class="alt">/ 灵玉</span></span></div><div class="relic r2"><span class="rnum">②</span><span class="ritems"><span class="main">灵玉</span> <span class="alt">/ 青龙</span></span></div><div class="relic r3"><span class="rnum">③</span><span class="ritems"><span class="main">堕龙</span> </span></div><div class="relic r4"><span class="rnum">④</span><span class="ritems"><span class="main">猪心</span> <span class="alt">/ 母神</span></span></div></div>
+      <div class="rows">
+        <div class="row"><span class="k">开局</span><span class="v"><div class="open-pair">
+          <div class="op"><span class="src bt">本体</span><span>①猪心 + ④母神</span></div>
+          <div class="op"><span class="src dlc">DLC</span><span>④母神印</span></div></div></span></div>
+        <div class="row"><span class="k">武器</span><span class="v"><b>专武 > 太祖</b></span></div>
+        <div class="row"><span class="k">秘籍</span><span class="v"><b>山河破 · 一剑开天门</b></span></div>
+      </div></div></div></div><div class="char " id="b8">
+      <div class="char-head"><div class="seal">罗</div><div class="char-name">阎罗地藏明王</div><div class="char-rule"></div><div class="char-ele"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.2a7 7 0 0 1 7 7c0 2.3-1.3 3.7-1.5 5.3l-.1 1.2a1.2 1.2 0 0 1-1.2 1.1H8.8a1.2 1.2 0 0 1-1.2-1.1l-.1-1.2C7.3 13.7 6 12.3 6 10a7 7 0 0 1 6-6.8z"/><circle cx="9.4" cy="10.2" r="1.5"/><circle cx="14.6" cy="10.2" r="1.5"/><path d="M10 18v1.6M14 18v1.6"/></svg></div></div>
+      <div class="builds"><div class="card ">
+      <div class="card-top"><span class="branch">剑一</span><span class="flow">恐惧流</span></div>
+      <div class="relics"><div class="relic r1"><span class="rnum">①</span><span class="ritems"><span class="main">恐惧心</span> </span></div><div class="relic r2"><span class="rnum">②</span><span class="ritems"><span class="main">猛虎印</span> <span class="alt">/ 白虎</span></span></div><div class="relic r3"><span class="rnum">③</span><span class="ritems"><span class="main">须臾</span> </span></div><div class="relic r4"><span class="rnum">④</span><span class="ritems"><span class="main">猪心</span> </span></div></div>
+      <div class="rows">
+        <div class="row"><span class="k">开局</span><span class="v"><div class="open-pair">
+          <div class="op"><span class="src bt">本体</span><span>①恐惧心 + ④猪心</span></div>
+          <div class="op"><span class="src dlc">DLC</span><span>①恐惧心 · ④母神</span></div></div></span></div>
+        <div class="row"><span class="k">武器</span><span class="v"><b>专武 > 太祖</b></span></div>
+        <div class="row"><span class="k">秘籍</span><span class="v"><b>潦草急书 · 魂能聚爆</b></span></div>
+      </div></div><div class="card j2">
+      <div class="card-top"><span class="branch">剑二</span><span class="flow">死亡领域流</span></div>
+      <div class="relics"><div class="relic r1"><span class="rnum">①</span><span class="ritems"><span class="main">神皇</span> <span class="alt">/ 恐惧心</span></span></div><div class="relic r2"><span class="rnum">②</span><span class="ritems"><span class="main">恐惧心</span> </span></div><div class="relic r3"><span class="rnum">③</span><span class="ritems"><span class="main">神皇</span> </span></div><div class="relic r4"><span class="rnum">④</span><span class="ritems"><span class="main">猪心</span> <span class="alt">/ 母神</span></span></div></div>
+      <div class="rows">
+        <div class="row"><span class="k">开局</span><span class="v"><div class="open-pair">
+          <div class="op"><span class="src bt">本体</span><span>①恐惧心 + ④猪心</span></div>
+          <div class="op"><span class="src dlc">DLC</span><span>③神皇 · ④母神</span></div></div></span></div>
+        <div class="row"><span class="k">武器</span><span class="v"><b>赤玺</b></span></div>
+        <div class="row"><span class="k">秘籍</span><span class="v"><b>江山图 (yyds)</b></span></div>
+      </div></div></div></div><div class="char " id="b9">
+      <div class="char-head"><div class="seal">日</div><div class="char-name">日月轮转双天</div><div class="char-rule"></div><div class="char-ele"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="12" r="3.6"/><path d="M9 4.5v1.6M9 17.9v1.6M2.5 12h1.6M13.4 12H15M4.4 7.4l1.1 1.1M12.5 15.5l1.1 1.1M4.4 16.6l1.1-1.1M12.5 8.5l1.1-1.1"/><path d="M19.5 8.2a4.8 4.8 0 1 0 1.3 9.3 5.8 5.8 0 0 1-1.3-9.3z"/></svg></div></div>
+      <div class="builds"><div class="card ">
+      <div class="card-top"><span class="branch">剑一</span><span class="flow">太阳神</span></div>
+      <div class="relics"><div class="relic r1"><span class="rnum">①</span><span class="ritems"><span class="main">神皇</span> <span class="alt">/ 狼毛</span></span></div><div class="relic r2"><span class="rnum">②</span><span class="ritems"><span class="main">玄武</span> <span class="alt">/ 堕龙</span></span></div><div class="relic r3"><span class="rnum">③</span><span class="ritems"><span class="main">玄诡刃</span> </span></div><div class="relic r4"><span class="rnum">④</span><span class="ritems"><span class="main">母神</span> <span class="alt">/ 猪心</span></span></div></div>
+      <div class="rows">
+        <div class="row"><span class="k">开局</span><span class="v"><div class="open-pair">
+          <div class="op"><span class="src bt">本体</span><span>①神皇 + ④母神</span></div>
+          <div class="op"><span class="src dlc">DLC</span><span>①神皇 + ④母神</span></div></div></span></div>
+        <div class="row"><span class="k">武器</span><span class="v"><b>两仪 > 回魂</b></span></div>
+        <div class="row"><span class="k">秘籍</span><span class="v"><b>日神宗 · 日神之刃</b></span></div>
+      </div></div><div class="card j2">
+      <div class="card-top"><span class="branch">剑二</span><span class="flow">月亮神</span></div>
+      <div class="relics"><div class="relic r1"><span class="rnum">①</span><span class="ritems"><span class="main">神皇</span> <span class="alt">/ 猪心</span></span></div><div class="relic r2"><span class="rnum">②</span><span class="ritems"><span class="main">堕龙</span> <span class="alt">/ 母神</span></span></div><div class="relic r3"><span class="rnum">③</span><span class="ritems"><span class="main">母神</span> </span></div><div class="relic r4"><span class="rnum">④</span><span class="ritems"><span class="main">母神</span> <span class="alt">/ 猪心</span></span></div></div>
+      <div class="rows">
+        <div class="row"><span class="k">开局</span><span class="v"><div class="open-pair">
+          <div class="op"><span class="src bt">本体</span><span>①神皇 + ④猪心</span></div>
+          <div class="op"><span class="src dlc">DLC</span><span>①神皇 + ④母神</span></div></div></span></div>
+        <div class="row"><span class="k">武器</span><span class="v"><b>两仪 > 太祖</b></span></div>
+        <div class="row"><span class="k">秘籍</span><span class="v"><b>月神宗 · 月神之衣</b></span></div>
+      </div></div></div></div><div class="char generic" id="b10">
+      <div class="char-head"><div class="seal">通</div><div class="char-name">通用冷门</div><div class="char-rule"></div><div class="char-ele"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="4"/><circle cx="12" cy="12" r="1.2" fill="currentColor"/></svg></div></div>
+      <div class="builds"><div class="card ">
+      <div class="card-top"><span class="branch">有手就行</span><span class="flow">发光流</span><span class="tag">肝皮肤 / 成就</span></div>
+      <div class="relics"><div class="relic r1"><span class="rnum">①</span><span class="ritems"><span class="main">生命之种</span> </span></div><div class="relic r2"><span class="rnum">②</span><span class="ritems"><span class="main">劝君莫停</span> </span></div><div class="relic r3"><span class="rnum">③</span><span class="ritems"><span class="alt">自由</span></span></div><div class="relic r4"><span class="rnum">④</span><span class="ritems"><span class="alt">自由</span></span></div></div>
+      <div class="rows">
+        <div class="row"><span class="k">开局</span><span class="v"><div class="open-pair">
+          <div class="op"><span class="src bt">本体</span><span>生命之种 + 劝君莫停 = 发绿狴犴</span></div>
+          <div class="op"><span class="src dlc">DLC</span><span>全职业适用,最配毒1</span></div></div></span></div>
+        <div class="row"><span class="k">武器</span><span class="v"><b>自由(多余精炼生命)</b></span></div>
+        <div class="row"><span class="k">秘籍</span><span class="v"><b>自由搭配</b></span></div>
+      </div></div><div class="card j2">
+      <div class="card-top"><span class="branch">没手也行</span><span class="flow">倒地流</span><span class="tag">挂机无尽</span></div>
+      <div class="relics"><div class="relic r1"><span class="rnum">①</span><span class="ritems"><span class="main">重山鞋</span> </span></div><div class="relic r2"><span class="rnum">②</span><span class="ritems"><span class="main">玄武</span> </span></div><div class="relic r3"><span class="rnum">③</span><span class="ritems"><span class="main">重山鞋</span> </span></div><div class="relic r4"><span class="rnum">④</span><span class="ritems"><span class="main">永恒(猪心)</span> </span></div></div>
+      <div class="rows">
+        <div class="row"><span class="k">开局</span><span class="v"><div class="open-pair">
+          <div class="op"><span class="src bt">本体</span><span>②玄武 + ④永恒(或赌狗 ①重山鞋+④永恒)</span></div>
+          <div class="op"><span class="src dlc">DLC</span><span>打无尽 · 武器云眠</span></div></div></span></div>
+        <div class="row"><span class="k">武器</span><span class="v"><b>云眠</b></span></div>
+        <div class="row"><span class="k">秘籍</span><span class="v"><b>魂多势众 · 醉剑 · 千斤坠 · 睡梦罗汉</b></span></div>
+      </div></div></div><div class="cnote"><b>倒地流</b> 解放双手,成型后进图即秒;难点是前期过渡难、武器要刷。精炼优先生命,秘籍优先生命防御。</div></div>
+  </section>
+
+  <section class="sec" id="s-mech">
+    <div class="sec-head"><span class="sec-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 2.5v3M12 18.5v3M2.5 12h3M18.5 12h3M5.4 5.4l2.1 2.1M16.5 16.5l2.1 2.1M18.6 5.4l-2.1 2.1M7.5 16.5l-2.1 2.1"/></svg><span class="no">伍</span></span><h2 class="sec-title">核心机制词典</h2><span class="sec-rule"></span></div>
+    <p class="sec-lead">看懂这些,你就懂了这游戏的伤害逻辑。</p>
+    <div class="grid2"><div class="mech"><div class="mt"><h4>走火入魔</h4><span class="badge atk">进攻</span></div><p><b>+300% 全攻击,-300% 防御</b>(实为大幅增加受到的伤害),击杀回复。伤害核武,但裸点会暴毙。</p><div class="mtip">配玄武 / 绿天赋容错 / 空明无敌一起用才安全。</div></div><div class="mech"><div class="mt"><h4>玄武之魂</h4><span class="badge def">攻防一体</span></div><p>把防御转成伤害——<b>每 +1% 防御 → +1.5% 伤害</b>。既扛揍又增伤,无影、日月等流派的地基。</p><div class="mtip">绿色系前半页解锁;和走火、猪心不冲突,可叠乘。</div></div><div class="mech"><div class="mt"><h4>憎恨之心</h4><span class="badge atk">无副作用</span></div><p>核心/功效位 <b>+100% 全攻击,没有任何负作用</b>。通用、安全、强,开荒最值得 SL 的核心。</p><div class="mtip">需先解锁;没有就退求三色结晶 / 狼王白鬃。</div></div><div class="mech"><div class="mt"><h4>母神旧印</h4><span class="badge util">无限R</span></div><p>提供 <b>无限 R(收剑/大招)</b> 的关键圣物,多个 DLC 流派的发动机。</p><div class="mtip">刷完书别急着出门,先去圣物箱定向锁它,否则没有无限 R。</div></div><div class="mech"><div class="mt"><h4>踏风草</h4><span class="badge util">减CD</span></div><p><b>冲刺/瞬身能削减收剑 CD</b>,配合后变“无限滑铲”。这就是为什么火2、雷1 收剑 CD 长却不顿。</p><div class="mtip">CD 嫌长别干等:喷酒+平A补刀+狂冲刺,踏风草帮你把 CD 滑没。</div></div><div class="mech"><div class="mt"><h4>真伤 / 百分比</h4><span class="badge boss">打BOSS</span></div><p>蛇火<b>百分比扣血</b>(吃 BOSS 大血条)、龙火/真火<b>无视防御真伤</b>。这正是酒系打 BOSS 比纯机制流舒服的原因。</p><div class="mtip">打 BOSS 走蛇酒(配雄黄)伤害最高,龙酒无视防御更稳。</div></div><div class="mech"><div class="mt"><h4>堕龙</h4><span class="badge atk">近战必带</span></div><p><b>+100% 飞剑攻击 + 召唤圣剑助战</b>,近战流派的出门首选。</p><div class="mtip">常规掉率为 0,只能在补给站用红魂随机刷新获得。</div></div><div class="mech"><div class="mt"><h4>精炼方向</h4><span class="badge util">选攻击</span></div><p>所有非单次加成都是<b>累乘</b>,10%+10% &gt; 20%。所以精炼一律加攻击,别加生命。</p><div class="mtip">精炼放最后做——SL 退出重进会让精炼的攻击砍半、生命清零。</div></div></div>
+  </section>
+
+  <section class="sec" id="s-tip">
+    <div class="sec-head"><span class="sec-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 10a7.5 7.5 0 0 1 12.4-3.4L20 9"/><path d="M19.5 14a7.5 7.5 0 0 1-12.4 3.4L4 15"/><path d="M20 4v5h-5M4 20v-5h5"/></svg><span class="no">陆</span></span><h2 class="sec-title">实用技巧 · SL</h2><span class="sec-rule"></span></div>
+    <p class="sec-lead">回报最高的几个操作。前两条几乎每把都用得上。</p>
+    <div class="grid2"><div class="mech"><div class="mt"><h4>SL 刷随机产物</h4></div><p>开局圣物、技能书、中途秘籍/骷髅房、大女鬼商店、品质升级,不满意就<b>右上角三条杠 → 重新开始</b>反复刷。品质升级实时随机,重开可确保成功。</p></div><div class="mech"><div class="mt"><h4>SL 掉属性陷阱</h4></div><p>每次离开游戏再进,<b>上次精炼的生命消失、攻击砍半</b>。所以精炼要放在确定不再 SL 之后做,开荒长局尤其注意。</p></div><div class="mech"><div class="mt"><h4>重铸武器换轨</h4></div><p>直接重铸出 A1-A4 都不要,就离开重进、先 3 选 1 拿圣物,再重铸会变成 <b>B1-B4 新序列</b>,想抠特定武器(如太祖)很有用。</p></div><div class="mech"><div class="mt"><h4>刷流派专属秘籍</h4></div><p>章节最终 BOSS 掉的秘籍奖池更小、专属占多数。想玩某流派(如蛇酒)就<b>反复打序章 BOSS</b>,拿到再进第一章;房间怪物随机,刮不动可退出重进。</p></div></div>
+  </section>
+
+  <section class="sec" id="s-codex">
+    <div class="sec-head"><span class="sec-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 4h9a2 2 0 0 1 2 2v11a3 3 0 0 0 3 3H9a2 2 0 0 1-2-2z"/><path d="M7 4a2 2 0 0 0-2 2v1.5h2"/><path d="M10 9h5M10 12.5h5"/></svg><span class="no">柒</span></span><h2 class="sec-title">见闻录 &amp; 封印</h2><span class="sec-rule"></span></div>
+    <p class="sec-lead">见闻录补全剧情 + 解锁永久加成,本体图鉴在<b>床左边</b>。一部分藏在地图角落,其余靠击杀概率掉落。</p>
+    <div class="call warn"><b>新手大坑 — 这几个别手贱解锁:</b>见闻录能解锁圣物【血玉髓】【星辰之玉】和武器【咒杀】,但它们十分鸡肋,解锁后只会污染奖池,让你想要的好东西更难刷出来。不是为了刷成就就别点。</div>
+    <div class="call tip"><b>封印 = 提纯奖池。</b>圣物/武器封印后在局内不再掉落,能大幅提高刷到目标的概率;但前期红魂少时先别封印。</div>
+  </section>
+
+  <section class="sec" id="s-skin">
+    <div class="sec-head"><span class="sec-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 5.5c4.5-1.2 9.5-1.2 14 0 .3 6-1 10.3-4.2 13.2-1.1 1-2 1.3-2.8 1.3s-1.7-.3-2.8-1.3C6 15.8 4.7 11.5 5 5.5z"/><path d="M8.5 9.5c.6.5 1.6.5 2.2 0M13.3 9.5c.6.5 1.6.5 2.2 0M10 14c1.2 1 2.8 1 4 0"/></svg><span class="no">捌</span></span><h2 class="sec-title">皮肤 &amp; 收集</h2><span class="sec-rule"></span></div>
+    <p class="sec-lead">基本都是中后期奖励,了解即可,不用急。</p>
+    <div class="list"><div class="li gold"><div class="ico">金</div><div class="lc"><h4>流派皮肤 · 金色手</h4><p>用对应流派<b>通关白灰难度</b>一次解锁。</p><div class="where">白灰需先打通狂雪,在观音像切换</div></div></div><div class="li frost"><div class="ico">蓝</div><div class="lc"><h4>流派皮肤 · 蓝色手</h4><p>用对应流派<b>通关无尽模式 50 层</b>解锁。</p><div class="where">无尽在烬梦 DLC</div></div></div><div class="li gold"><div class="ico">框</div><div class="lc"><h4>金色边框</h4><p><b>无尽 100 层</b>解锁。</p></div></div><div class="li red"><div class="ico">NPC</div><div class="lc"><h4>NPC 皮肤</h4><p>烬梦 DLC——打完 boss 出五个箱子,内含黄魂红魂和 NPC 皮肤(老板娘/铁匠/小偷/机关老人/司马玥),部分带特殊效果。</p><div class="where">在本体床右下角的铜镜换装</div></div></div></div>
+  </section>
+
+  <section class="sec" id="s-npc">
+    <div class="sec-head"><span class="sec-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="2.3"/><path d="M5 19v-1.8a4 4 0 0 1 8 0V19"/><circle cx="16.5" cy="8.5" r="1.9"/><path d="M14.5 19v-1.3a3.4 3.4 0 0 1 5.5-2.4"/></svg><span class="no">玖</span></span><h2 class="sec-title">NPC &amp; 解锁</h2><span class="sec-rule"></span></div>
+    <p class="sec-lead">推进流程时顺手救出的关键 NPC,每个都让构筑更强。</p>
+    <div class="list"><div class="li"><div class="ico">偷</div><div class="lc"><h4>小偷</h4><p>放出后每次转场给 <b>幽冥之魂 / 圣物 / 武器 三选一</b>,极大加速发育。</p><div class="where">第一章猪之章 · 打完第一个 boss 后的笼子里</div></div></div><div class="li"><div class="ico">玥</div><div class="lc"><h4>司马玥</h4><p>跟你走后提供 <b>武器转化</b>,帮你换到想要的武器。</p><div class="where">第二章鹤之章 · 击败司马瑛后</div></div></div><div class="li"><div class="ico">匠</div><div class="lc"><h4>铁匠</h4><p><b>强化神兵、洗练词条</b>,抠极品武器靠它。</p><div class="where">第二章鹤之章 · 打完第一个 boss 后最后一个房间砸碎蓝瓶子</div></div></div><div class="li"><div class="ico">翁</div><div class="lc"><h4>机关老人</h4><p>工作台提供 <b>近战/防御/生命/飞剑/收剑减冷却</b> 等基础属性强化,火2、雷1 靠它把收剑 CD 堆到 90%。</p><div class="where">第三章龟之章 · 第一个 boss 后房间右上角工作台</div></div></div><div class="li"><div class="ico">剑</div><div class="lc"><h4>DLC 入口</h4><p>通关一周目后,跟<b>发光的金剑</b>对话即可进入终业 DLC 内容。</p><div class="where">佛堂</div></div></div></div>
+  </section>
+
+</main>
+
+<footer>
+  <b>关于本攻略:</b>整合自玩家社区常用配装与流程经验,口径已统一。游戏经烬梦、终业多次更新,版本变动后部分细节或有调整。<br>
+  单文件 · 可离线保存到 Mac 或手机 · 顶部可按分区跳转
+</footer>
+<script>
+const links=[...document.querySelectorAll('.nlink')];
+if('IntersectionObserver' in window){
+  const obs=new IntersectionObserver(es=>{es.forEach(en=>{if(en.isIntersecting){links.forEach(l=>l.classList.toggle('on',l.dataset.t===en.target.id));}})},{rootMargin:'-45% 0px -50% 0px'});
+  document.querySelectorAll('section.sec').forEach(el=>obs.observe(el));
+}
+(function(){
+  if(window.matchMedia('(prefers-reduced-motion:reduce)').matches)return;
+  const cv=document.getElementById('snow');if(!cv)return;const ctx=cv.getContext('2d');let w,h,f;
+  function init(){w=cv.width=innerWidth;h=cv.height=innerHeight;const n=Math.min(70,Math.floor(w/22));
+    f=Array.from({length:n},()=>({x:Math.random()*w,y:Math.random()*h,r:Math.random()*1.7+.5,s:Math.random()*.5+.2,d:Math.random()*.6-.3}))}
+  function draw(){ctx.clearRect(0,0,w,h);ctx.fillStyle='rgba(225,235,247,.7)';ctx.beginPath();
+    f.forEach(p=>{ctx.moveTo(p.x,p.y);ctx.arc(p.x,p.y,p.r,0,6.28);p.y+=p.s;p.x+=p.d;
+      if(p.y>h+4){p.y=-4;p.x=Math.random()*w}if(p.x>w+4)p.x=-4;if(p.x<-4)p.x=w+4});
+    ctx.fill();requestAnimationFrame(draw)}
+  addEventListener('resize',init);init();draw();
+})();
+</script>
+</body>
+</html>
