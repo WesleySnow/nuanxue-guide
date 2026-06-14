@@ -150,7 +150,11 @@
   .hero-crest{width:108px;height:108px;display:block;margin:0 auto 6px}
   .sec-ico{position:relative;flex:0 0 auto;width:38px;height:38px;border-radius:10px;background:var(--ink-3);border:1px solid var(--line-strong);display:grid;place-items:center;color:var(--frost);transform:rotate(-3deg)}
   .sec-ico svg{width:21px;height:21px;transform:rotate(3deg)}
-  .sec-ico .no{position:absolute;right:-6px;top:-7px;font-family:"Noto Serif SC","Songti SC","STSong","SimSun",serif;font-weight:900;font-size:11px;color:#0a0e16;background:var(--vermilion);width:18px;height:18px;border-radius:6px;display:grid;place-items:center;box-shadow:0 2px 8px rgba(216,69,58,.35)}
+  .sec-ico .no{position:absolute;right:-7px;top:-7px;font-family:"Noto Serif SC","Songti SC","STSong","SimSun",serif;font-weight:900;font-size:11px;color:#0a0e16;background:var(--vermilion);min-width:18px;height:18px;padding:0 3px;border-radius:6px;display:grid;place-items:center;box-shadow:0 2px 8px rgba(216,69,58,.35)}
+  .subh{display:flex;align-items:baseline;gap:10px;margin:22px 0 12px}
+  .subh span{font-family:"Noto Serif SC","Songti SC","STSong","SimSun",serif;font-weight:700;font-size:16px;color:var(--snow)}
+  .subh span::before{content:"";display:inline-block;width:14px;height:2px;background:var(--vermilion);margin-right:9px;vertical-align:middle}
+  .subh small{font-size:12px;color:var(--snow-faint)}
   .char-ele{flex:0 0 auto;width:30px;height:30px;color:var(--snow-faint);opacity:.85}
   .char-ele svg{width:30px;height:30px;stroke-width:1.35}
   .char.generic .char-ele{color:var(--frost);opacity:.6}
@@ -193,7 +197,7 @@
   </div>
 </div>
 
-<nav class="bar"><div class="bar-inner"><a class="nlink" href="#s-start" data-t="s-start">开荒</a><a class="nlink" href="#s-soul" data-t="s-soul">刷红魂</a><a class="nlink" href="#s-talent" data-t="s-talent">天赋</a><a class="nlink" href="#s-build" data-t="s-build">配装</a><a class="nlink" href="#s-mech" data-t="s-mech">机制</a><a class="nlink" href="#s-tip" data-t="s-tip">技巧</a><a class="nlink" href="#s-codex" data-t="s-codex">见闻录</a><a class="nlink" href="#s-skin" data-t="s-skin">皮肤</a><a class="nlink" href="#s-npc" data-t="s-npc">NPC</a></div></nav>
+<nav class="bar"><div class="bar-inner"><a class="nlink" href="#s-start" data-t="s-start">开荒</a><a class="nlink" href="#s-soul" data-t="s-soul">刷红魂</a><a class="nlink" href="#s-talent" data-t="s-talent">天赋</a><a class="nlink" href="#s-build" data-t="s-build">配装</a><a class="nlink" href="#s-mech" data-t="s-mech">机制</a><a class="nlink" href="#s-tip" data-t="s-tip">技巧</a><a class="nlink" href="#s-codex" data-t="s-codex">见闻录</a><a class="nlink" href="#s-skin" data-t="s-skin">皮肤</a><a class="nlink" href="#s-npc" data-t="s-npc">NPC</a><a class="nlink" href="#s-book" data-t="s-book">秘籍</a><a class="nlink" href="#s-dlc" data-t="s-dlc">DLC</a></div></nav>
 
 <main class="wrap">
 
@@ -240,11 +244,9 @@
         <b>③ 红色系</b> — 攻击/伤害向,拉面板。<br>
         <b>④ 绿色后半页 + 杂项</b> 收尾。</p>
         <div class="mtip">树不大,速刷细雪几盘就全满,顺序只影响最初几十红魂。</div></div>
-      <div class="mech"><div class="mt"><h4>终业树 · 命杀炼</h4><span class="badge boss">DLC 进阶</span></div>
-        <p><b>命</b>=防御(生命/减伤/葫芦次数)、<b>杀</b>=输出、<b>炼</b>=运气/死后货币存留等杂项。<br>
-        顺序:<b>优先杀 → 其次命 → 炼最后</b>(炼前四排前期没用,别浪费)。<br>
-        杀天赋:<b>左列中列=近战,右列=远程</b>;飞剑远程通关效率低,建议走近战。</p>
-        <div class="mtip">魂多势众是发育型,平民不太建议学,容易浪费一个秘籍位。</div></div>
+      <div class="mech"><div class="mt"><h4>终业树 · 森罗万象之心</h4><span class="badge boss">DLC 独立系统</span></div>
+        <p>终业用一套完全独立的新天赋《森罗万象之法》。以 <b>时间余晖</b> 升级“森罗万象熔炉”,每升一级得 1 点森罗能量(上限 41);点亮节点需<b>上一级点满</b>、且部分节点互斥。Boss 掉落 <b>时间残响</b> 符文,提供自定义词条与效果;熔炉满 40 级后开启残响分解,可用碎片随机抽新残响。</p>
+        <div class="mtip">点数有限,成长路线要取舍——先点能量 / 输出节点,残响词条按 build 需求挑。</div></div>
     </div>
   </section>
 
@@ -511,6 +513,27 @@
     <div class="sec-head"><span class="sec-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="2.3"/><path d="M5 19v-1.8a4 4 0 0 1 8 0V19"/><circle cx="16.5" cy="8.5" r="1.9"/><path d="M14.5 19v-1.3a3.4 3.4 0 0 1 5.5-2.4"/></svg><span class="no">玖</span></span><h2 class="sec-title">NPC &amp; 解锁</h2><span class="sec-rule"></span></div>
     <p class="sec-lead">推进流程时顺手救出的关键 NPC,每个都让构筑更强。</p>
     <div class="list"><div class="li"><div class="ico">偷</div><div class="lc"><h4>小偷</h4><p>放出后每次转场给 <b>幽冥之魂 / 圣物 / 武器 三选一</b>,极大加速发育。</p><div class="where">第一章猪之章 · 打完第一个 boss 后的笼子里</div></div></div><div class="li"><div class="ico">玥</div><div class="lc"><h4>司马玥</h4><p>跟你走后提供 <b>武器转化</b>,帮你换到想要的武器。</p><div class="where">第二章鹤之章 · 击败司马瑛后</div></div></div><div class="li"><div class="ico">匠</div><div class="lc"><h4>铁匠</h4><p><b>强化神兵、洗练词条</b>,抠极品武器靠它。</p><div class="where">第二章鹤之章 · 打完第一个 boss 后最后一个房间砸碎蓝瓶子</div></div></div><div class="li"><div class="ico">翁</div><div class="lc"><h4>机关老人</h4><p>工作台提供 <b>近战/防御/生命/飞剑/收剑减冷却</b> 等基础属性强化,火2、雷1 靠它把收剑 CD 堆到 90%。</p><div class="where">第三章龟之章 · 第一个 boss 后房间右上角工作台</div></div></div><div class="li"><div class="ico">剑</div><div class="lc"><h4>DLC 入口</h4><p>通关一周目后,跟<b>发光的金剑</b>对话即可进入终业 DLC 内容。</p><div class="where">佛堂</div></div></div></div>
+  </section>
+  <section class="sec" id="s-book">
+    <div class="sec-head"><span class="sec-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6.5C10.5 5 8 4.5 5 4.8V18c3-.3 5.5.2 7 1.6 1.5-1.4 4-1.9 7-1.6V4.8c-3-.3-5.5.2-7 1.7z"/><path d="M12 6.5V20"/></svg><span class="no">拾</span></span><h2 class="sec-title">秘籍词典</h2><span class="sec-rule"></span></div>
+    <p class="sec-lead">每个流派的专属秘籍多达几十本(光烬梦就 30+),逐本编数值会失真。这里收录<b>真正决定强度、且数值可考</b>的核心秘籍——通用金书对所有职业生效,是各流派配装里“秘籍”那一行的底层逻辑。徽章:<b>T0</b>看见必拿、<b>T1</b>优先。</p>
+    <div class="subh"><span>通用金书</span><small>所有流派通用 · 真正决定强度的核心 · 数值为实测</small></div><div class="grid2"><div class="mech"><div class="mt"><h4>走火入魔</h4><span class="badge atk">T0</span></div><p>所有攻击 <b>+300%</b>,防御 -300%,生命减少时回复防御。</p><div class="mtip">减防本质是“受到伤害×3”,不影响玄武的防御转伤;配玄武或绿天赋容错才安全。</div></div><div class="mech"><div class="mt"><h4>神勇无惧</h4><span class="badge def">T0</span></div><p>所有攻击 +30%,最大生命 +15%,防御 +10%。</p><div class="mtip"><b>无副作用</b>,新手与过渡期最稳的一本。</div></div><div class="mech"><div class="mt"><h4>不动如山</h4><span class="badge def">T0</span></div><p>血量 +100%,攻击 +30%,防御 +20%,但 <b>无法瞬身</b>。</p><div class="mtip">配玄武极强;别在打吕坤海前拿,失去位移很受限。</div></div><div class="mech"><div class="mt"><h4>百步穿杨</h4><span class="badge atk">T0</span></div><p>飞剑攻击 +35%,飞剑命中时 5% 几率造成 <b>360%</b> 伤害。</p><div class="mtip">飞剑流与近战流通用。</div></div><div class="mech"><div class="mt"><h4>魂多势众</h4><span class="badge util">T1</span></div><p>每携带 50 点幽冥之魂(蓝魂),所有伤害 +1.25%。</p><div class="mtip">蓝魂足够时约 <b>+500% 终伤</b>;吃蓝魂,平民慎选,配红魂挑战/贪婪惩戒。</div></div><div class="mech"><div class="mt"><h4>疾风骤雨</h4><span class="badge atk">通用</span></div><p>近战攻击 +35%,防御 -250%,大幅提高机动力,瞬身时对路径上敌人造成伤害。</p><div class="mtip">跑图神器;注意减防。</div></div><div class="mech"><div class="mt"><h4>狂风之刃</h4><span class="badge util">通用</span></div><p>近战攻击速度 <b>+80%</b>。</p><div class="mtip">攻速流(冰2、雷2 等)核心。</div></div><div class="mech"><div class="mt"><h4>裸衣</h4><span class="badge atk">通用</span></div><p>每少携带一个圣物,所有伤害 +33%。</p><div class="mtip">极限“少件流”才考虑。</div></div></div><div class="subh"><span>流派核心秘籍</span><small>雷1 / 火2 的成型关键</small></div><div class="grid2"><div class="mech"><div class="mt"><h4>雷神之铠(雷铠)</h4><span class="badge boss">雷1核心</span></div><p>让被动“怒雷”的触发频率达到 <b>每秒 4 次</b>。</p><div class="mtip">雷1 的绝对核心,没它不成型。</div></div><div class="mech"><div class="mt"><h4>蛮雷</h4><span class="badge boss">雷</span></div><p>[雷]触发的怒雷会对目标及周围产生雷暴脉冲,造成攻击力 60% 的闪电伤害。</p></div><div class="mech"><div class="mt"><h4>蛇之酒</h4><span class="badge boss">火2·BOSS</span></div><p>把“燃烧”升级为“毒焰”(火+毒复合,带百分比扣血,可同时吃火伤与毒伤加成)。</p><div class="mtip">纯输出更高;配 3 号位雄黄发挥。注意蛇酒的毒本质仍是火。</div></div><div class="mech"><div class="mt"><h4>龙之酒</h4><span class="badge boss">火2·BOSS</span></div><p>把火焰转为“真火”,造成 <b>无视防御</b> 的真实燃烧伤害。</p><div class="mtip">对高防 BOSS 稳;响指流更推荐。</div></div><div class="mech"><div class="mt"><h4>爆燃</h4><span class="badge atk">火2核心</span></div><p>火2 清屏核心,收剑/响指时引爆连锁火焰。</p><div class="mtip">T1 必拿,是响指流的引爆环节。</div></div></div><div class="subh"><span>烬梦 · 梦魇秘籍</span><small>无尽 / 高难常驻</small></div><div class="grid2"><div class="mech"><div class="mt"><h4>梦魇·体魄(剑铸吾心)</h4><span class="badge def">烬梦</span></div><p>进阶后“每多 1% 血量,增加 0.2% 伤害”。</p><div class="mtip">响指/堆血流必选,精炼全程加生命。</div></div><div class="mech"><div class="mt"><h4>梦魇·掌握</h4><span class="badge atk">烬梦</span></div><p>进阶后满血时获得高额增伤与真伤。</p><div class="mtip">与体魄一套,满血输出爆炸。</div></div><div class="mech"><div class="mt"><h4>梦魇·帜炎</h4><span class="badge atk">烬梦</span></div><p>增加火焰伤害。</p><div class="mtip">火系无尽常驻。</div></div><div class="mech"><div class="mt"><h4>幻象石台·符文(石头)</h4><span class="badge util">烬梦</span></div><p>可选:收剑减冷却 -33%(上限 90%,拿 3 次即可)、火焰伤害 +33%、全部伤害 +20%、防御/生命/毒伤/移速等。</p><div class="mtip">按流派需求挑;移速可配神行百变转攻击。</div></div></div>
+    <div class="call tip">想要某个具体职业的<b>全部宗门专属秘籍逐本数值</b>(如七剑的破灭/冷血、冰系的寂灭之眼等),告诉我职业名,我单独查证补上,不靠印象编。</div>
+  </section>
+
+  <section class="sec" id="s-dlc">
+    <div class="sec-head"><span class="sec-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.6l2.1 6.3 6.3 2.1-6.3 2.1L12 19.4l-2.1-6.3L3.6 11l6.3-2.1z"/><circle cx="18.6" cy="5" r="1.1"/></svg><span class="no">拾壹</span></span><h2 class="sec-title">DLC 内容</h2><span class="sec-rule"></span></div>
+    <p class="sec-lead">两个 DLC 都要先<b>通关本体一周目</b>才解锁(佛堂金剑进入)。下面是各自新增的系统、关卡、职业与关键机制。</p>
+    <div class="grid2">
+  <div class="mech"><div class="mt"><h4>烬梦 DLC</h4><span class="badge def">免费</span></div>
+   <p>拥有本体即可玩。通关一周目后,与佛堂中央发光的金剑对话进入<b>梦魇世界</b>。新增 5 个 Boss、6 种真/假结局、<b>30+ 梦魇秘籍</b>及多种衍生组合,并开启<b>无尽模式</b>。四像处(猪/鹤/龟/虎 = 贪婪/疯狂/傲慢/盲从化身)选择路线。</p>
+   <div class="mtip">手机端 roll(卡死重置)可刷新秘籍 / 圣物 / Boss 宝箱。</div></div>
+  <div class="mech"><div class="mt"><h4>终业 DLC</h4><span class="badge boss">¥28 付费</span></div>
+   <p>新增龙国疆域 <b>5 大关卡</b>、<b>3 个新职业</b>(灵剑修罗 / 阎罗地藏明王 / 日月轮转双天)、3 个结局。配套<b>全新独立天赋《森罗万象之心》</b>。</p>
+   <div class="mtip">新武器【回魂】可直接 +500% 终伤,堪称神器,基本取代太祖。</div></div>
+</div>
+<div class="call warn">【烬梦·清明值】离开佛堂后清明值随时间流逝,<b>耗尽会直接陷入梦魇而亡</b>——梦魇世界是限时的,别磨蹭。</div>
+<div class="call tip">【终业·森罗万象之心】用<b>时间余晖</b>升级森罗万象熔炉,每升一级得 1 点森罗能量(上限 41);点亮节点需上一级点满、部分互斥;Boss 掉落<b>时间残响</b>符文提供自定义词条,熔炉满 40 级开启残响分解。</div>
   </section>
 
 </main>
