@@ -1,5 +1,5 @@
 # 暖雪 · 流派秘籍全集
-(`[https://<你的用户名>.github.io/](https://wesleysnow.github.io/nuanxue-guide/)`)
+(https://wesleysnow.github.io/nuanxue-guide/)
 一份《暖雪》单页攻略,国风冰雪主题,手机 / 电脑均可离线查阅。涵盖:
 
 - **开荒路线** — 难度阶梯 + 七剑无影过第一章四步
