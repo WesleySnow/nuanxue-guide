@@ -17,9 +17,8 @@
 2. 把本目录的 `index.html` 上传到仓库根目录(网页端可直接拖拽 / Add file → Upload files,或用 git push)。
 3. 进入仓库 **Settings → Pages**。
 4. **Source** 选 `Deploy from a branch`,**Branch** 选 `main`、目录 `/ (root)`,保存。
-5. 等一两分钟,访问 `https://<你的用户名>.github.io/<仓库名>/` 即可。
+5. 等一两分钟,访问 `(https://wesleysnow.github.io/nuanxue-guide/)` 即可。
 
-> 想用根域名直接打开(`https://<你的用户名>.github.io/`),把仓库命名为 `<你的用户名>.github.io` 即可。
 
 ## 本地预览
 
